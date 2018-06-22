@@ -18,12 +18,6 @@ reset = function () {
     $(".target_number").html("<p class='target_num'>"+ target_number +"</p>")
 }
 
-
-$(".target_number").html("<p class='target_num'>"+ target_number +"</p>")
-$(".wins-losses").append("<p class='w-l-text'>Wins: "+ wins +"</p>")
-$(".wins-losses").append("<p class='w-l-text'>Losses: "+ losses +"</p>")
-$(".your_score").text(player_number)
-
 $(".crystal-1").on("click", function () {
     player_number += crystal_1;
     $(".your_score").text(player_number)
@@ -31,11 +25,18 @@ $(".crystal-1").on("click", function () {
         wins++;
         reset();
         alert("You win!")
+        $(".wins-losses").empty();
+        $(".wins-losses").append("<p class='w-l-text'>Wins: "+ wins +"</p>")
+        $(".wins-losses").append("<p class='w-l-text'>Losses: "+ losses +"</p>")   
+
     }
     if (player_number > target_number ) {
         losses++;
         reset();
         alert("You lose!")
+        $(".wins-losses").empty();
+        $(".wins-losses").append("<p class='w-l-text'>Wins: "+ wins +"</p>")
+        $(".wins-losses").append("<p class='w-l-text'>Losses: "+ losses +"</p>")
     }
 })
 
@@ -46,11 +47,17 @@ $(".crystal-2").on("click", function () {
         wins++;
         reset();
         alert("You win!")
+        $(".wins-losses").empty();
+        $(".wins-losses").append("<p class='w-l-text'>Wins: "+ wins +"</p>")
+        $(".wins-losses").append("<p class='w-l-text'>Losses: "+ losses +"</p>")
     }
     if (player_number > target_number ) {
         losses++;
         reset();
         alert("You lose!")
+        $(".wins-losses").empty();
+        $(".wins-losses").append("<p class='w-l-text'>Wins: "+ wins +"</p>")
+        $(".wins-losses").append("<p class='w-l-text'>Losses: "+ losses +"</p>")
     }
 })
 
@@ -61,11 +68,17 @@ $(".crystal-3").on("click", function () {
         wins++;
         reset();
         alert("You win!")
+        $(".wins-losses").empty();
+        $(".wins-losses").append("<p class='w-l-text'>Wins: "+ wins +"</p>")
+        $(".wins-losses").append("<p class='w-l-text'>Losses: "+ losses +"</p>")
     }
     if (player_number > target_number ) {
         losses++;
         reset();
         alert("You lose!")
+        $(".wins-losses").empty();
+        $(".wins-losses").append("<p class='w-l-text'>Wins: "+ wins +"</p>")
+        $(".wins-losses").append("<p class='w-l-text'>Losses: "+ losses +"</p>")
     }
 })
 
@@ -76,11 +89,21 @@ $(".crystal-4").on("click", function () {
         wins++;
         reset();
         alert("You win!")
+        $(".wins-losses").empty();
+        $(".wins-losses").append("<p class='w-l-text'>Wins: "+ wins +"</p>")
+        $(".wins-losses").append("<p class='w-l-text'>Losses: "+ losses +"</p>")
     }
     if (player_number > target_number ) {
         losses++;
         reset();
         alert("You lose!")
+        $(".wins-losses").empty();
+        $(".wins-losses").append("<p class='w-l-text'>Wins: "+ wins +"</p>")
+        $(".wins-losses").append("<p class='w-l-text'>Losses: "+ losses +"</p>")
     }
 })
 
+$(".target_number").html("<p class='target_num'>"+ target_number +"</p>")
+$(".wins-losses").append("<p class='w-l-text'>Wins: "+ wins +"</p>")
+$(".wins-losses").append("<p class='w-l-text'>Losses: "+ losses +"</p>")
+$(".your_score").text(player_number)
