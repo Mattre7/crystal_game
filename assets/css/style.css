@@ -1,0 +1,50 @@
+body {
+    background-color:rgb(194, 194, 194);
+}
+
+.main-header {
+    color: white;
+    padding: 20px;
+}
+.instructions {
+    border-width: 0px 0px 1px 0px;
+    padding: 10px;
+    border-style: solid;
+    font-size: 20px;
+}
+
+.target_number {
+    height: 100px;
+    margin: 20px 0px;
+}
+
+.target_num {
+    font-size: 60px;
+}
+
+.wins-losses {
+    height: 100px;
+    margin: 20px 0px;
+}
+
+.w-l-text {
+    text-align: left;
+    margin: 5px 0 0 0;
+    font-size: 25px;
+}
+
+.player_number {
+    background-color: rgb(218, 82, 150);
+    color: white;
+    margin-top: 25px;
+}
+
+.your_score_lbl {
+    font-size: 25px;
+    margin: 15px 0px 0px 0px;
+}
+
+.your_score {
+    font-size: 50px;
+    margin: 0px 0px 15px 0px;
+}
